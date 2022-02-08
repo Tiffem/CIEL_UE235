@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% include 'nav/navigation.html.twig' %}
+        <div class"body-container" style=" min-height: 67vh;">{% block body %}{% endblock %}</div>
+        {% block javascripts %}{% endblock %}
+        {% include 'nav/footer.html.twig' %}
+    </body>
+</html>
